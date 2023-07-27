@@ -55,21 +55,21 @@
   }
 }
 .image_one {
-  width: 10rem;
-  height: 10rem;
+  width: 12rem;
+  height: 11rem;
   margin-top: 10rem;
 }
 .image_two {
   width: 15rem;
   height: 12rem;
   margin-top: 2rem;
-  margin-left: -2rem;
+  margin-left: -3rem;
 }
 .image_three {
-  width: 10rem;
-  height: 10rem;
+  width: 12rem;
+  height: 11rem;
   margin-top: 1rem;
-  margin-left: -6.8rem;
+  margin-left: -6.2rem;
 }
 @media screen and (max-width: 768px) {
   .image_one {
@@ -81,12 +81,12 @@
     width: 10rem;
     height: 10rem;
     margin-top: 4rem;
-    margin-left: -3rem;
+    margin-left: -3.7rem;
   }
   .image_three {
     width: 10rem;
     height: 10rem;
     margin-top: 1rem;
-    margin-left: -3rem;
+    margin-left: -3.7rem;
   }
 }
