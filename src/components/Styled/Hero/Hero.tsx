@@ -29,7 +29,6 @@ export const MobileNavBar = styled.div`
   width: 40px;
   transform: translateY(-50%);
   z-index: 2;
-  
 `;
 
 export const StyledHeroImage = styled.div<StyledHeroImageProps>`
@@ -60,14 +59,12 @@ export const HeroSubText = styled.div`
   transform: translate(-50%, 50%);
   z-index: 2;
   text-align: center;
+  font-size: calc(0.8rem + 1.5vw);
   color: #fff;
-
-  @media screen and (max-width: 768px) {
-  }
 `;
 export const HeroButton = styled(Button)<HeroButtonProps>`
   position: absolute;
-  bottom: 20%;
+  bottom: 18%;
   left: 50%;
   transform: translate(-50%, 50%);
   z-index: 2;
