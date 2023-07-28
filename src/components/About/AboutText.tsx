@@ -1,4 +1,5 @@
 import { AboutTextContainer } from "../Styled/About/TextContainer";
+import AboutCards from "./AboutCards";
 
 const AboutText = () => {
   return (
@@ -17,6 +18,7 @@ const AboutText = () => {
             engaging, intelligent and innovative user experiences. We are a more
             than just a digital agency.
           </p>
+          <AboutCards />
         </div>
       </AboutTextContainer>
     </>
