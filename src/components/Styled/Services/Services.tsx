@@ -2,13 +2,11 @@ import { Card } from "react-bootstrap";
 import { styled } from "styled-components";
 
 export const StyledCard = styled(Card)`
-  height: 16rem;
-  width: 15rem;
-
   display: flex;
   justify-content: center;
-  border-radius: 20%;
   text-align: center;
+  height: 18rem;
+  width: 18rem;
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
   background-color: rgba(17, 25, 40, 0.75);

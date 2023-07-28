@@ -1,6 +1,5 @@
 import { AboutTextContainer } from "../Styled/About/TextContainer";
 import AboutCards from "./AboutCards";
-
 const AboutText = () => {
   return (
     <>
