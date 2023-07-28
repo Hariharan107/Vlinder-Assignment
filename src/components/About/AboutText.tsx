@@ -4,7 +4,7 @@ const AboutText = () => {
   return (
     <>
       <AboutTextContainer className='text-center'>
-        <div className='text-white'>ABOUT US</div>
+        <div className='text-warning'>ABOUT US</div>
         <div>
           <h1 className='text-white'>
             We are a more than just a digital agency
