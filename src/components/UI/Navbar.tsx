@@ -47,9 +47,7 @@ const Navbar = () => {
         </ul>
       ) : (
         <>
-          
-            <MobileMenuIcon />
-          
+          <MobileMenuIcon />
         </>
       )}
     </>

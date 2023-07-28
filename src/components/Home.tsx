@@ -1,8 +1,9 @@
 import Navbar from "./UI/Navbar";
-import { Container, Nav } from "./Styled/Hero";
+import { Container, Nav } from "./Styled/Hero/Hero";
 import ImageCarousel from "./Hero/ImageCarousel";
 import TextContainer from "./Hero/TextContainer";
 import About from "./About";
+import { Main } from "./Styled/Main/Main";
 const Home = () => {
   return (
     <>

@@ -29,6 +29,7 @@ export const MobileNavBar = styled.div`
   width: 40px;
   transform: translateY(-50%);
   z-index: 2;
+  
 `;
 
 export const StyledHeroImage = styled.div<StyledHeroImageProps>`

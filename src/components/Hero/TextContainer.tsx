@@ -1,4 +1,4 @@
-import { HeroButton, HeroSubText, StyledHeroText } from "../Styled/Hero";
+import { HeroButton, HeroSubText, StyledHeroText } from "../Styled/Hero/Hero";
 
 import { useMediaQuery } from "react-responsive";
 const TextContainer = () => {
@@ -8,8 +8,8 @@ const TextContainer = () => {
     <>
       <StyledHeroText>
         <div>
-          <span className="digital">Digital</span>
-          <span className="design"> Design Awards</span>
+          <span className='digital'>Digital</span>
+          <span className='design'> Design Awards</span>
         </div>
       </StyledHeroText>
       <HeroSubText>
