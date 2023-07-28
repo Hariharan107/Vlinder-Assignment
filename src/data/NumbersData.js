@@ -11,7 +11,7 @@ export const numbersData = [
   },
   {
     id: 3,
-    number: "38K",
+    number: "38",
     description: "Files Uploaded",
   },
   {

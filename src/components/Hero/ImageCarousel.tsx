@@ -18,13 +18,13 @@ const ImageCarousel = () => {
         navigation
       >
         <SwiperSlide>
-          <StyledHeroImage image='./mesh-814.png'></StyledHeroImage>
+          <StyledHeroImage image='./mesh-498.png'></StyledHeroImage>
         </SwiperSlide>
         <SwiperSlide>
-          <StyledHeroImage image='./mesh-756.png'></StyledHeroImage>
+          <StyledHeroImage image='./mesh-631.png'></StyledHeroImage>
         </SwiperSlide>
         <SwiperSlide>
-          <StyledHeroImage image='./mesh-677.png'></StyledHeroImage>
+          <StyledHeroImage image='./mesh-10.png'></StyledHeroImage>
         </SwiperSlide>
       </Swiper>
     </>
