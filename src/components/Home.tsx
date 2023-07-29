@@ -5,6 +5,7 @@ import TextContainer from "./Hero/TextContainer";
 import About from "./Sections/About";
 import { Main } from "./Styled/Main/Main";
 import Services from "./Sections/Services";
+import Gallery from "./Sections/Gallery";
 const Home = () => {
   return (
     <>
@@ -18,6 +19,7 @@ const Home = () => {
       <Main>
         <About />
         <Services />
+        <Gallery />
       </Main>
     </>
   );
