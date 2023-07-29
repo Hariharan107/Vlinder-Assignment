@@ -15,9 +15,11 @@ const TextContainer = () => {
       <HeroSubText>
         If you want to design your project with us, Please contact us!
       </HeroSubText>
-      <HeroButton variant='outline-light ' size={buttonSize}>
-        Contact us
-      </HeroButton>
+
+        <HeroButton variant='outline-light' size={buttonSize}>
+          Contact us
+        </HeroButton>
+     
     </>
   );
 };

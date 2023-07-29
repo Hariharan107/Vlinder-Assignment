@@ -54,7 +54,7 @@ export const StyledHeroText = styled.div`
 
 export const HeroSubText = styled.div`
   position: absolute;
-  bottom: 30%;
+  bottom: 33%;
   left: 50%;
   transform: translate(-50%, 50%);
   z-index: 2;

@@ -15,15 +15,18 @@ const StyledCard = styled(Card)`
   height: 8rem;
   border-radius: 20%;
   text-align: center;
-  background: #e0e0e0;
-  box-shadow: 15px 15px 30px, -15px -15px 30px;
-  margin-bottom: 50px;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
 `;
 
 const CardContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  padding: 1rem 1rem 5rem;
   justify-content: center;
 `;
 
@@ -34,7 +37,7 @@ const AboutCards = () => {
         <Card.Title>
           <img src={icon} alt={heading} />
         </Card.Title>
-        <Card.Text>{heading}</Card.Text>
+        <Card.Text className='text-white text-center'>{heading}</Card.Text>
       </Card.Body>
     </StyledCard>
   ));

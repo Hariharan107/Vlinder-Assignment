@@ -4,6 +4,7 @@ import ImageCarousel from "./Hero/ImageCarousel";
 import TextContainer from "./Hero/TextContainer";
 import About from "./Sections/About";
 import { Main } from "./Styled/Main/Main";
+import Services from "./Sections/Services";
 const Home = () => {
   return (
     <>
@@ -16,6 +17,7 @@ const Home = () => {
       </Container>
       <Main>
         <About />
+        <Services />
       </Main>
     </>
   );
