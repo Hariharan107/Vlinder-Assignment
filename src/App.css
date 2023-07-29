@@ -72,4 +72,6 @@
 }
 /* ___________________________ */
 /* Apply styles only to the swiper-gallery */
-
+.swiper-pagination-bullet {
+  background-color: aqua;
+}
