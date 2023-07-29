@@ -17,7 +17,7 @@ const AboutImages = () => {
             className='rounded image_two '
           />
           <img
-            src='https://media.istockphoto.com/id/1522030420/photo/portrait-of-overjoyed-cheerful-lady-wear-stylish-clothes-hold-macbook-raise-fist-rejoice-sale.webp?b=1&s=170667a&w=0&k=20&c=TJMFkcBjHd4dE6Dii-4OC5RKzYXo_nlfQ5OGdMJz7oM='
+            src='https://images.unsplash.com/photo-1514826786317-59744fe2a548?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG1hY2Jvb2slMjBwcm98ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60'
             className='rounded image_three mb-5'
           />
         </Col>

@@ -6,26 +6,6 @@
   font-family: "Josefin Sans", sans-serif;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 30px;
-  color: #3b3b3b;
-  border-radius: 50%;
-  cursor: pointer;
-}
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-  color: #000;
-}
-
-.swiper-pagination-bullet {
-  background-color: #000;
-}
-.swiper-button-prev::after,
-.swiper-button-next::after {
-  font-size: 15px;
-}
 .text {
   font-family: "Nota Serif", serif;
 }
@@ -90,3 +70,6 @@
     margin-left: -3.7rem;
   }
 }
+/* ___________________________ */
+/* Apply styles only to the swiper-gallery */
+
