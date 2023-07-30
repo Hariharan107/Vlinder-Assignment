@@ -4,7 +4,8 @@ import styles from "../Home.module.css";
 import SearchBar from "./SearchBar";
 import { useMediaQuery } from "react-responsive";
 import MobileMenuIcon from "./MobileMenuIcon";
-
+import { Link as ScrollLink } from "react-scroll"; // Import the ScrollLink component from react-scroll
+import { styled } from "styled-components";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const mobileView = useMediaQuery({ maxWidth: 775 });
@@ -12,7 +13,11 @@ const Navbar = () => {
   useEffect(() => {
     setIsOpen(mobileView); // Set isOpen to mobileView value on initial render and whenever mobileView changes
   }, [mobileView]);
-
+  const StyledScrollLink = styled(ScrollLink)`
+    color: #fff;
+    text-decoration: none;
+    color: #fff;
+  `;
   return (
     <>
       <Link to='/' className={styles.logo}>
@@ -26,22 +31,21 @@ const Navbar = () => {
       {!mobileView ? (
         <ul>
           <li>
-            <Link to='#'>Home</Link>
+            <StyledScrollLink to='about-section' smooth={true} duration={500}>
+              About
+            </StyledScrollLink>
           </li>
           <li>
-            <Link to='#'>Showcases</Link>
+            <StyledScrollLink to='service-section' smooth={true} duration={500}>
+              Services
+            </StyledScrollLink>
           </li>
           <li>
-            <Link to='#'>About</Link>
+            <StyledScrollLink to='gallery-section' smooth={true} duration={500}>
+              Gallery
+            </StyledScrollLink>
           </li>
           <li>
-            <Link to='#'>Portfolio</Link>
-          </li>
-          <li>
-            <Link to='#'>Contact</Link>
-          </li>
-          <li>
-            {" "}
             <SearchBar />
           </li>
         </ul>

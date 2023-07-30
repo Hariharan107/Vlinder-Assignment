@@ -3,7 +3,7 @@ import { ImageContainer } from "../Styled/About/ImageContainer";
 
 const AboutImages = () => {
   return (
-    <ImageContainer>
+    <ImageContainer id="about-section">
       <Row>
         <Col>
           <img

@@ -44,7 +44,11 @@ const Numbers = () => {
     }
   );
 
-  return <StyledContainer>{<Row>{Numbers}</Row>}</StyledContainer>;
+  return (
+    <StyledContainer id='gallery-section'>
+      {<Row>{Numbers}</Row>}
+    </StyledContainer>
+  );
 };
 
 export default Numbers;

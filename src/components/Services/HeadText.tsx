@@ -8,7 +8,7 @@ const StyledHeadText = styled.h1`
 `;
 const HeadText = () => {
   return (
-    <div className=' text-center'>
+    <div className=' text-center' id="service-section">
       <span className='text-warning'>BEST FEATURES</span>
       <StyledHeadText className='text'>Services</StyledHeadText>
     </div>

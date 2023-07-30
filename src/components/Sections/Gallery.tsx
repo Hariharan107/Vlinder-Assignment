@@ -32,7 +32,7 @@ export default function Gallery() {
   true;
 
   return (
-    <div className='pb-5'>
+    <div className='pb-5' >
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
