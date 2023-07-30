@@ -6,8 +6,7 @@ const Services = () => {
   return (
     <div className='pt-0 pt-lg-5 '>
       <HeadText />
-      {/* <ServiceCards /> */}
-      
+      <ServiceCards />
       <Numbers />
     </div>
   );

@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { styled } from "styled-components";
 import { numbersData } from "../../data/numbersData";
 import { Col, Container, Row } from "react-bootstrap";

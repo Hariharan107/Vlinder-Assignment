@@ -1,29 +1,29 @@
-export const MainServiceCard = [
-  {
-    id: 1,
-    title: "Best of our features",
-  },
-];
-export const SubCardData = [
+export const ServiceCardData = [
   {
     id: 1,
     title: "Graphic Design",
-    icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJExlaxlQNvTTAiBUvHXk_IxO0vJrY6l4CXEd6PLvTGXzJagtnX32kIVGnB-fAuWug4fk&usqp=CAU",
+    image: "https://images.pexels.com/photos/3778355/pexels-photo-3778355.jpeg?auto=compress&cs=tinysrgb&w=600",
     description:
       "The Best Graphic Design Company in India offers Graphic Design Services like Logo Design, Brochure Design, Flyer Design.",
   },
   {
     id: 2,
     title: "Web and Mobile Design",
-    icon: "https://img.icons8.com/3d-fluency/94/laptop.png",
+    image: "https://images.pexels.com/photos/2102416/pexels-photo-2102416.jpeg?auto=compress&cs=tinysrgb&w=600",
     description:
       "The Best Web Design Company in India offers Web Design Services like Website Design, Mobile Website Design, Responsive Website Design.",
   },
   {
     id: 3,
     title: "Social Media Marketing",
-    icon: "https://img.icons8.com/3d-fluency/94/statistics.png",
+    image: "https://images.pexels.com/photos/4458553/pexels-photo-4458553.jpeg?auto=compress&cs=tinysrgb&w=600",
     description:
       "The Best Social Media Marketing Company in India offers Social Media Marketing Services like Facebook Marketing, Instagram Marketing, Twitter Marketing.",
+  },
+  {
+    id: 4,
+    title: "Search Engine Optimization",
+    image: "https://images.pexels.com/photos/5474038/pexels-photo-5474038.jpeg?auto=compress&cs=tinysrgb&w=600",
+    description:"The Best SEO Company in India offers SEO Services like On-Page SEO, Off-Page SEO, Technical SEO.",
   },
 ];

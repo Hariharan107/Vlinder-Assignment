@@ -19,6 +19,7 @@ const Home = () => {
       <Main>
         <About />
         <Services />
+
         <Gallery />
       </Main>
     </>
