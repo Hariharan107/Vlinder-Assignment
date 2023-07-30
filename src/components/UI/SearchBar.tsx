@@ -27,7 +27,12 @@ const SearchBar = () => {
           ></path>
         </svg>
       </button>
-      <input placeholder='Search...' className={styles.input} name='text' type='text' />
+      <input
+        placeholder='Search...'
+        className={styles.input}
+        name='text'
+        type='text'
+      />
     </div>
   );
 };

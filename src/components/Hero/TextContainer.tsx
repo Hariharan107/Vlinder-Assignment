@@ -1,9 +1,8 @@
 import { HeroButton, HeroSubText, StyledHeroText } from "../Styled/Hero/Hero";
-
+import styles from "./Button.module.css";
 import { useMediaQuery } from "react-responsive";
 const TextContainer = () => {
   const isMdOrLg = useMediaQuery({ minWidth: 768 });
-  const buttonSize = isMdOrLg ? "lg" : "md";
   return (
     <>
       <StyledHeroText>
@@ -15,11 +14,12 @@ const TextContainer = () => {
       <HeroSubText>
         If you want to design your project with us, Please contact us!
       </HeroSubText>
-
-        <HeroButton variant='outline-light' size={buttonSize}>
-          Contact us
-        </HeroButton>
-     
+      {/* <button type='button' className={styles.btn_donate}>
+        Check Schedule
+      </button> */}
+      <HeroButton variant='outline-light' size='lg'>
+        Contact us
+      </HeroButton>
     </>
   );
 };

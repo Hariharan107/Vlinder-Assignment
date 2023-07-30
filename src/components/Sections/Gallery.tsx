@@ -48,7 +48,7 @@ export default function Gallery() {
         pagination={true}
         autoplay={{
           disableOnInteraction: false,
-          delay: 2000,
+          delay: 1350,
           pauseOnMouseEnter: true,
         }}
         loop={true}

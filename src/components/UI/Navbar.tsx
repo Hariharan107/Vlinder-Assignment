@@ -11,7 +11,7 @@ const Navbar = () => {
   const mobileView = useMediaQuery({ maxWidth: 775 });
 
   useEffect(() => {
-    setIsOpen(mobileView); // Set isOpen to mobileView value on initial render and whenever mobileView changes
+    setIsOpen(mobileView);
   }, [mobileView]);
   const StyledScrollLink = styled(ScrollLink)`
     color: #fff;

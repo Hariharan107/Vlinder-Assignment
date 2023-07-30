@@ -7,6 +7,7 @@ import { Main } from "./Styled/Main/Main";
 import Services from "./Sections/Services";
 import Gallery from "./Sections/Gallery";
 import Testimonials from "./Sections/Testimonial";
+import Footer from "./UI/Footer";
 const Home = () => {
   return (
     <>
@@ -22,6 +23,7 @@ const Home = () => {
         <Services />
         <Gallery />
         <Testimonials />
+        <Footer />
       </Main>
     </>
   );

@@ -24,20 +24,19 @@ const ImageCarousel = () => {
           prevEl: `.${styles["swiper-button-prev"]}`,
         }}
       >
-        <SwiperSlide>
-          <StyledHeroImage image='./mesh-498.png'></StyledHeroImage>
-        </SwiperSlide>
+
         <SwiperSlide>
           <StyledHeroImage image='./mesh-631.png'></StyledHeroImage>
+        </SwiperSlide>
+        <SwiperSlide>
+          <StyledHeroImage image='./mesh-498.png'></StyledHeroImage>
         </SwiperSlide>
         <SwiperSlide>
           <StyledHeroImage image='./mesh-10.png'></StyledHeroImage>
         </SwiperSlide>
       </Swiper>
       <div className={`${styles["swiper-button-prev"]} swiper-button-prev`} />
-      <div
-        className={`${styles["swiper-pagination"]} swiper-pagination `}
-      />
+      <div className={`${styles["swiper-pagination"]} swiper-pagination `} />
       <div className={`${styles["swiper-button-next"]} swiper-button-next`} />
     </>
   );

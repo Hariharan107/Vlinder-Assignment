@@ -68,6 +68,7 @@ export const HeroButton = styled(Button)<HeroButtonProps>`
   left: 50%;
   transform: translate(-50%, 50%);
   z-index: 2;
+  font-size: calc(0.8rem + 1vw);
   @media screen and (max-width: 768px) {
     bottom: 15%;
     left: 50%;
