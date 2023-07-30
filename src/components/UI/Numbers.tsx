@@ -1,7 +1,11 @@
-import { styled } from "styled-components";
 import { numbersData } from "../../data/numbersData";
-import { Col, Container, Row } from "react-bootstrap";
-import CountUp from "react-countup";
+import { Col, Row } from "react-bootstrap";
+import {
+  StyledDescription,
+  StyledContainer,
+  StyledDivv as StyledDiv,
+  StyledCountUp,
+} from "../Styled/Services/Services.js";
 import { useInView } from "react-intersection-observer";
 
 interface numberProps {
@@ -9,28 +13,6 @@ interface numberProps {
   number: string;
   description: string;
 }
-
-const StyledDescription = styled.p`
-  font-size: 1.5rem;
-`;
-
-const StyledContainer = styled(Container)`
-  padding-top: 4rem;
-`;
-
-const StyledDiv = styled.div`
-  @media screen and (max-width: 560px) {
-    padding: 1rem;
-  }
-`;
-
-const StyledCountUp = styled(CountUp)`
-  font-size: 3rem;
-  font-weight: bolder;
-  font-family: "Anton", sans-serif;
-  letter-spacing: 2px;
-  letter-spacing: 5px;
-`;
 
 const Numbers = () => {
   const [ref, inView] = useInView();

@@ -7,13 +7,18 @@ import "swiper/css/autoplay";
 import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
 import styles from "./Gallery.module.css";
 import { ImagesData } from "../../data/CarouselData";
+import { styled } from "styled-components";
 
 interface CarouselImageProps {
   id: number;
   imageSrc: string;
   altText: string;
 }
-
+const CarouselDescription = styled.div`
+  text-align: center;
+  font-family: "Anton", serif;
+  letter-spacing: 2px;
+`;
 export default function Gallery() {
   const isLaptop = useMediaQuery({ minWidth: 768 });
   const centerSlides = Boolean(!isLaptop);
@@ -52,6 +57,9 @@ export default function Gallery() {
       >
         {CarouselImages}
       </Swiper>
+      <CarouselDescription className='text-warning text-uppercase pt-2'>
+        Art & Illustration<div className='text-white'> Natural plus modern</div>
+      </CarouselDescription>
     </div>
   );
 }
