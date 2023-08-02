@@ -6,33 +6,33 @@ import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
 import styles from "./Gallery.module.css";
-import { ImagesData } from "../../data/CarouselData";
+
 import { styled } from "styled-components";
 
-interface CarouselImageProps {
-  id: number;
-  imageSrc: string;
-  altText: string;
-}
+
 const CarouselDescription = styled.div`
   text-align: center;
   font-family: "Anton", serif;
   letter-spacing: 2px;
 `;
-export default function Gallery() {
+interface CarouselImageProps {
+  id: number;
+  imageSrc: string;
+  altText: string;
+}
+export default function Gallery({ CarouselData }: { CarouselData: CarouselImageProps[]}) {
   const isLaptop = useMediaQuery({ minWidth: 768 });
   const centerSlides = Boolean(!isLaptop);
-  const CarouselImages = ImagesData.map(
+  const CarouselImages = CarouselData.map(
     ({ id, imageSrc, altText }: CarouselImageProps) => (
       <SwiperSlide key={id} className={styles["swiper-slide"]}>
         <img src={imageSrc} alt={altText} className={styles.img} />
       </SwiperSlide>
     )
   );
-  true;
 
   return (
-    <div className='pb-5' >
+    <div className='pb-5'>
       <Swiper
         effect={"coverflow"}
         grabCursor={true}

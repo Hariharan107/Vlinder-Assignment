@@ -18,6 +18,7 @@ const Navbar = () => {
     text-decoration: none;
     color: #fff;
   `;
+
   return (
     <>
       <Link to='/' className={styles.logo}>

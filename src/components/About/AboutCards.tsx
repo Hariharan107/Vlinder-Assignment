@@ -1,8 +1,8 @@
 import { Card } from "react-bootstrap";
 import styled from "styled-components";
-import { AboutData } from "../../data/AboutData.js";
+// import AboutData from "../../data/AboutData.json";
 
-interface AboutData {
+interface AboutDataProps {
   id: number;
   icon: string;
   heading: string;
@@ -30,8 +30,8 @@ const CardContainer = styled.div`
   justify-content: center;
 `;
 
-const AboutCards = () => {
-  const cards = AboutData.map(({ id, icon, heading }: AboutData) => (
+const AboutCards = ({ AboutData }: { AboutData: AboutDataProps[] }) => {
+  const cards = AboutData.map(({ id, icon, heading }: AboutDataProps) => (
     <StyledCard key={id} className='rounded'>
       <Card.Body>
         <Card.Title>

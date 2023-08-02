@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { MobileNavBar } from "../Styled/Hero/Hero";
-// import SearchBar from "./SearchBar";
 
 const MobileMenuIcon = () => {
   const [open, setOpen] = useState(false);
@@ -38,6 +37,13 @@ const MobileMenuIcon = () => {
                 d='M6 18L18 6M6 6l12 12'
               />
             </svg>
+            <nav className="mobile_nav">
+              <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+              </ul>
+            </nav>
           </>
         )}
       </MobileNavBar>

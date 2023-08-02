@@ -14,9 +14,9 @@ interface numberProps {
   description: string;
 }
 
-const Numbers = () => {
+const Numbers = ({ NumbersData }: { NumbersData: numberProps[] }) => {
   const [ref, inView] = useInView();
-  const Numbers = numbersData.map(
+  const Numbers = NumbersData.map(
     ({ id, number, description }: numberProps) => {
       return (
         <Col key={id} lg={3} sm={6} xs={12} ref={ref}>

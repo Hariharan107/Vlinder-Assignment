@@ -1,6 +1,4 @@
-import React from "react";
 import { Container, Row } from "react-bootstrap";
-import { ServiceCardData } from "../../data/ServiceData.js";
 import {
   H1,
   P,
@@ -11,13 +9,12 @@ import {
 } from "../Styled/Services/Services.js";
 import { useMediaQuery } from "react-responsive";
 
-interface ServiceCardProps {
+interface ServicesData {
   id: number;
   title: string;
   image: string;
   description: string;
 }
-
 const defaultOptions = {
   reverse: false,
   max: 35,
@@ -29,12 +26,12 @@ const defaultOptions = {
   reset: true,
   easing: "cubic-bezier(.03,.98,.52,.99)",
 };
-const ServiceCards = () => {
+const ServiceCards = ({ ServicesData }: { ServicesData: ServicesData[] }) => {
   const BelowLaptopDevices = useMediaQuery({ maxWidth: 1080 });
   const tiltOptions = BelowLaptopDevices ? null : defaultOptions;
 
-  const ServiceCard = ServiceCardData.map(
-    ({ id, title, image, description }: ServiceCardProps) => (
+  const ServiceCard = ServicesData.map(
+    ({ id, title, image, description }: ServicesData) => (
       <StyledCol key={id} xl={3} lg={4} md={6} sm={12} className='text-center'>
         {tiltOptions ? (
           <StyledTilt options={tiltOptions}>

@@ -5,7 +5,13 @@ import Col from "react-bootstrap/Col";
 import AboutImages from "../About/AboutImages";
 import AboutText from "../About/AboutText";
 
-const About = () => {
+interface AboutDataProps {
+  id: number;
+  icon: string;
+  heading: string;
+}
+
+const About = ({ AboutData }: { AboutData: AboutDataProps[] }) => {
   return (
     <Container>
       <Row>
@@ -13,7 +19,7 @@ const About = () => {
           <AboutImages />
         </Col>
         <Col lg={6}>
-          <AboutText />
+          <AboutText AboutData={AboutData} />
         </Col>
       </Row>
     </Container>

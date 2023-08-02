@@ -8,6 +8,9 @@ import Services from "./Sections/Services";
 import Gallery from "./Sections/Gallery";
 import Testimonials from "./Sections/Testimonial";
 import Footer from "./UI/Footer";
+import Clients from "./Sections/Clients";
+import { AboutData, CarouselData, NumbersData, ServiceData } from "../data";
+
 const Home = () => {
   return (
     <>
@@ -19,10 +22,11 @@ const Home = () => {
         <TextContainer />
       </Container>
       <Main>
-        <About />
-        <Services />
-        <Gallery />
+        <About AboutData={AboutData} />
+        <Services NumbersData={NumbersData} ServicesData={ServiceData} />
+        <Gallery CarouselData={CarouselData} />
         <Testimonials />
+        <Clients />
         <Footer />
       </Main>
     </>

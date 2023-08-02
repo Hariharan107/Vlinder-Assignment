@@ -1,10 +1,16 @@
 import { styled } from "styled-components";
 import { AboutTextContainer } from "../Styled/About/TextContainer";
 import AboutCards from "./AboutCards";
-const AboutText = () => {
+interface AboutDataProps {
+  id: number;
+  icon: string;
+  heading: string;
+}
+const AboutText = ({ AboutData }: { AboutData: AboutDataProps[] }) => {
   const StyledP = styled.p`
     font-size: calc(0.9rem + 0.3vw);
   `;
+
   return (
     <>
       <AboutTextContainer className='text-center'>
@@ -21,7 +27,7 @@ const AboutText = () => {
             engaging, intelligent and innovative user experiences. We are a more
             than just a digital agency.
           </StyledP>
-          <AboutCards />
+          <AboutCards AboutData={AboutData} />
         </div>
       </AboutTextContainer>
     </>

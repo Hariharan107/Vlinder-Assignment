@@ -7,7 +7,8 @@ const TestimonialImageDiv = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.5;
+  /* opacity: 0.5; */
+  filter: brightness(50%);
 `;
 
 const Testimonials = () => {

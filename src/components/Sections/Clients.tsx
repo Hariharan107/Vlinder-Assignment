@@ -1,6 +1,4 @@
-
 const Clients = () => {
-  return <div className="name">Clients</div>;
+  return <div className='text-center text-white'>Clients</div>;
 };
-
 export default Clients;

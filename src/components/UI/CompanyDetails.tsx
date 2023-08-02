@@ -8,7 +8,7 @@ const StyledDiv = styled.div`
     font-family: "Noto Serif", serif;
     padding-right: 3px;
     text-transform: uppercase;
-    color: #499bf4;
+    color: #b3b2b2;
   }
 `;
 

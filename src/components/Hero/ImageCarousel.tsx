@@ -7,7 +7,7 @@ import { Navigation, Pagination } from "swiper/modules";
 import { StyledHeroImage } from "../Styled/Hero/Hero";
 import styles from "./ImageCarousel.module.css"; // Import the CSS Module
 
-const ImageCarousel = () => {
+const ImageCarousel = ( ) => {
   return (
     <>
       <Swiper
