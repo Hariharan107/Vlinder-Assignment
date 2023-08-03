@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { MobileNavBar } from "../Navbar/style";
+import { MobileNavBar } from "../style";
 
 const MobileMenuIcon = () => {
   const [open, setOpen] = useState(false);

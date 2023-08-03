@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import styles from "../Home/Home.module.css";
-import SearchBar from "../UI/SearchBar";
+import SearchBar from "./SearchBar/SearchBar";
 import { useMediaQuery } from "react-responsive";
-import MobileMenuIcon from "../UI/MobileMenuIcon";
+import MobileMenuIcon from "./MobileMenuIcon/MobileMenuIcon";
 import { StyledScrollLink } from "./style";
 
 interface NavbarProps {

@@ -5,7 +5,9 @@ import ServiceData from "./ServiceData";
 import NavBar from "./NavBar";
 import HeroText from "./HeroText";
 import AboutImages from "./AboutImages";
-
+import CompanyDetailsData from "./CompanyDetailsData";
+import NewsletterData from "./NewsletterData";
+import AboutText from "./AboutText";
 export {
   AboutData,
   CarouselData,
@@ -13,5 +15,8 @@ export {
   ServiceData,
   NavBar,
   HeroText,
+  CompanyDetailsData,
   AboutImages,
+  NewsletterData,
+  AboutText,
 };

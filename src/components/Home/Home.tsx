@@ -8,7 +8,7 @@ import { Main } from "./style";
 import Services from "../Services/Services";
 import Gallery from "../Gallery/Gallery";
 import Testimonials from "../Testimonials/Testimonial";
-import Footer from "../UI/Footer";
+import Footer from "../Footer/Footer";
 import {
   AboutData,
   CarouselData,
@@ -17,8 +17,10 @@ import {
   NavBar,
   HeroText,
   AboutImages,
+  NewsletterData,
+  CompanyDetailsData,
+  AboutText as AboutTextData,
 } from "../../../data/config";
-
 const Home = () => {
   return (
     <>
@@ -30,11 +32,15 @@ const Home = () => {
         <TextContainer {...HeroText} />
       </Container>
       <Main>
-        <About AboutData={AboutData} AboutImagesData={AboutImages} />
+        <About
+          AboutData={AboutData}
+          AboutImagesData={AboutImages}
+          AboutTextData={AboutTextData}
+        />
         <Services NumbersData={NumbersData} ServicesData={ServiceData} />
         <Gallery CarouselData={CarouselData} />
         <Testimonials />
-        <Footer />
+        <Footer {...CompanyDetailsData} {...NewsletterData} />
       </Main>
     </>
   );

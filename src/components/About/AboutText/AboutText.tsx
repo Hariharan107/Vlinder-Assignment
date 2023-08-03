@@ -6,7 +6,19 @@ interface AboutDataProps {
   icon: string;
   heading: string;
 }
-const AboutText = ({ AboutData }: { AboutData: AboutDataProps[] }) => {
+
+interface AboutTextProps {
+  sectionName: "string";
+  subText: "string";
+  desciprtion: "string";
+}
+interface AboutProps {
+  AboutData: AboutDataProps[];
+  AboutTextData: AboutTextProps;
+}
+const AboutText = ({ AboutData, AboutTextData }: AboutProps) => {
+  console.log(AboutTextData);
+  const { sectionName, subText, description } = AboutTextData;
   const StyledP = styled.p`
     font-size: calc(0.9rem + 0.3vw);
   `;
@@ -14,19 +26,10 @@ const AboutText = ({ AboutData }: { AboutData: AboutDataProps[] }) => {
   return (
     <>
       <AboutTextContainer className='text-center'>
-        <div className='text-warning'>ABOUT US</div>
+        <div className='text-warning'>{sectionName}</div>
         <div>
-          <h1 className='text-white'>
-            We are a more than just a digital agency
-          </h1>
-          <StyledP className='text-white '>
-            We are avo creative, a digital agency that specializes in
-            branding,the web design and the development of websites and apps. We
-            are a team of designers, developers, strategists and thinkers who
-            share a passion for creating great ideas and transforming them into
-            engaging, intelligent and innovative user experiences. We are a more
-            than just a digital agency.
-          </StyledP>
+          <h1 className='text-white'>{subText}</h1>
+          <StyledP className='text-white '>{description}</StyledP>
           <AboutCards AboutData={AboutData} />
         </div>
       </AboutTextContainer>

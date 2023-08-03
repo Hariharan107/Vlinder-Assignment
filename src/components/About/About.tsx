@@ -15,13 +15,20 @@ interface AboutImagesProps {
   imgAlt: string;
   custom_styles: string;
 }
+interface AboutTextProps {
+  sectionName: "string";
+  subText: "string";
+  desciprtion: "string";
+}
 
 interface AboutProps {
   AboutData: AboutDataProps[];
   AboutImagesData: AboutImagesProps[];
+  AboutTextData: AboutTextProps;
 }
 
-const About = ({ AboutData, AboutImagesData }: AboutProps) => {
+const About = ({ AboutData, AboutImagesData, AboutTextData }: AboutProps) => {
+
   return (
     <Container>
       <Row>
@@ -29,7 +36,7 @@ const About = ({ AboutData, AboutImagesData }: AboutProps) => {
           <AboutImages AboutImagesData={AboutImagesData} />
         </Col>
         <Col lg={6}>
-          <AboutText AboutData={AboutData} />
+          <AboutText AboutData={AboutData} AboutTextData={AboutTextData} />
         </Col>
       </Row>
     </Container>

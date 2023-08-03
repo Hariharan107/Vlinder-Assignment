@@ -1,0 +1,11 @@
+{
+  "title": "NEWSLETTER",
+  "description": "Subscribe our Newsletter here!",
+  "subscribeButton": "SUBSCRIBE",
+  "instagramPostTitle": "INSTAGRAM POST",
+  "instagramImages": [
+    "https://images.pexels.com/photos/732632/pexels-photo-732632.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "https://images.pexels.com/photos/2918010/pexels-photo-2918010.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "https://images.pexels.com/photos/1271620/pexels-photo-1271620.jpeg?auto=compress&cs=tinysrgb&w=600"
+  ]
+}

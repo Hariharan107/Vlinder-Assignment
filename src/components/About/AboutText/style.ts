@@ -7,3 +7,6 @@ export const AboutTextContainer = styled.div`
     padding-top: 7%;
   }
 `;
+export const StyledP = styled.p`
+font-size: calc(0.9rem + 0.3vw);
+`;
