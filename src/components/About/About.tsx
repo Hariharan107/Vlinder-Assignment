@@ -1,9 +1,8 @@
-import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import AboutImages from "../About/AboutImages";
-import AboutText from "../About/AboutText";
+import AboutImages from "./AboutImages";
+import AboutText from "./AboutText";
 
 interface AboutDataProps {
   id: number;
@@ -11,12 +10,23 @@ interface AboutDataProps {
   heading: string;
 }
 
-const About = ({ AboutData }: { AboutData: AboutDataProps[] }) => {
+interface AboutImagesProps {
+  imgSrc: string;
+  imgAlt: string;
+  custom_styles: string;
+}
+
+interface AboutProps {
+  AboutData: AboutDataProps[];
+  AboutImagesData: AboutImagesProps[];
+}
+
+const About = ({ AboutData, AboutImagesData }: AboutProps) => {
   return (
     <Container>
       <Row>
         <Col lg={6}>
-          <AboutImages />
+          <AboutImages AboutImagesData={AboutImagesData} />
         </Col>
         <Col lg={6}>
           <AboutText AboutData={AboutData} />

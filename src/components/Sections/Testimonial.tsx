@@ -7,16 +7,13 @@ const TestimonialImageDiv = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* opacity: 0.5; */
   filter: brightness(50%);
 `;
 
 const Testimonials = () => {
   return (
     <div style={{ paddingTop: "5rem" }} id='testimonials-section'>
-      <TestimonialImageDiv className='text-white text-center'>
-        {/* Testimonial */}
-      </TestimonialImageDiv>
+      <TestimonialImageDiv className='text-white text-center' />
     </div>
   );
 };

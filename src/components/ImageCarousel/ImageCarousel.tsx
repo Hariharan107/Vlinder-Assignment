@@ -4,10 +4,10 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { Navigation, Pagination } from "swiper/modules";
-import { StyledHeroImage } from "../Styled/Hero/Hero";
-import styles from "./ImageCarousel.module.css"; // Import the CSS Module
+import { StyledHeroImage } from "../HeroText/style";
+import styles from "./styles.module.css"; // Import the CSS Module
 
-const ImageCarousel = ( ) => {
+const ImageCarousel = () => {
   return (
     <>
       <Swiper
@@ -17,14 +17,13 @@ const ImageCarousel = ( ) => {
         loop={true}
         pagination={{
           clickable: true,
-          el: `.${styles["swiper-pagination"]}`, // Custom class for the pagination container
+          el: `.${styles["swiper-pagination"]}`,
         }}
         navigation={{
           nextEl: `.${styles["swiper-button-next"]}`,
           prevEl: `.${styles["swiper-button-prev"]}`,
         }}
       >
-
         <SwiperSlide>
           <StyledHeroImage image='./mesh-631.png'></StyledHeroImage>
         </SwiperSlide>
