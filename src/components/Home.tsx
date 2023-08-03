@@ -9,7 +9,7 @@ import Gallery from "./Sections/Gallery";
 import Testimonials from "./Sections/Testimonial";
 import Footer from "./UI/Footer";
 import Clients from "./Sections/Clients";
-import { AboutData, CarouselData, NumbersData, ServiceData } from "../data";
+import { AboutData, CarouselData, NumbersData, ServiceData } from "../data/config";
 
 const Home = () => {
   return (
