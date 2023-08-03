@@ -1,13 +1,13 @@
-import { styled } from "styled-components";
-import { Image, Col, Container } from "react-bootstrap";
+import { Col, Image } from "react-bootstrap";
 import { Tilt } from "react-tilt";
-import CountUp from "react-countup";
-export const H1 = styled.h1`
+import { styled } from "styled-components";
+
+export const StyledH1 = styled.h1`
   font-size: 1.5rem;
   font-weight: 600;
   color: #fff;
 `;
-export const P = styled.p`
+export const StyledP = styled.p`
   font-size: 1rem;
   font-weight: 400;
 `;
@@ -46,27 +46,4 @@ export const StyledCol = styled(Col)`
     margin-bottom: -11.5rem;
     padding-top: 1rem;
   }
-`;
-// ______________________________________________
-// Numbers.tsx Styled Components
-export const StyledDescription = styled.p`
-  font-size: 1.5rem;
-`;
-
-export const StyledContainer = styled(Container)`
-  padding-top: 4rem;
-`;
-
-export const StyledDivv = styled.div`
-  @media screen and (max-width: 560px) {
-    padding: 1rem;
-  }
-`;
-
-export const StyledCountUp = styled(CountUp)`
-  font-size: 3rem;
-  font-weight: bolder;
-  font-family: "Anton", sans-serif;
-  letter-spacing: 2px;
-  letter-spacing: 5px;
 `;

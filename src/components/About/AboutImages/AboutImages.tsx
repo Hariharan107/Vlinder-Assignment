@@ -1,5 +1,5 @@
 import { Row, Col } from "react-bootstrap";
-import { ImageContainer } from "../Styled/About/ImageContainer";
+import { ImageContainer } from "./style";
 interface AboutImagesProps {
   imgSrc: string;
   imgAlt: string;

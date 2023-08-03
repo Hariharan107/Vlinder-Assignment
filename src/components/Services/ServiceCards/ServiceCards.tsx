@@ -1,12 +1,12 @@
 import { Container, Row } from "react-bootstrap";
 import {
-  H1,
-  P,
+  StyledH1,
+  StyledP,
   StyledImage,
   StyledTilt,
   StyledDiv,
   StyledCol,
-} from "../Styled/Services/Services.js";
+} from "./style";
 import { useMediaQuery } from "react-responsive";
 
 interface ServicesData {
@@ -37,16 +37,16 @@ const ServiceCards = ({ ServicesData }: { ServicesData: ServicesData[] }) => {
           <StyledTilt options={tiltOptions}>
             <StyledImage src={image} alt={title} />
             <div>
-              <H1>{title}</H1>
-              <P className='text-white'>{description}</P>
+              <StyledH1>{title}</StyledH1>
+              <StyledP className='text-white'>{description}</StyledP>
             </div>
           </StyledTilt>
         ) : (
           <StyledDiv>
             <StyledImage src={image} alt={title} />
             <div>
-              <H1>{title}</H1>
-              <P className='text-white'>{description}</P>
+              <StyledH1>{title}</StyledH1>
+              <StyledP className='text-white'>{description}</StyledP>
             </div>
           </StyledDiv>
         )}

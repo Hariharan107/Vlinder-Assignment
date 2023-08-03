@@ -7,11 +7,11 @@ import HeroText from "./HeroText";
 import AboutImages from "./AboutImages";
 
 export {
-    AboutData,
-    CarouselData,
-    NumbersData,
-    ServiceData,
-    NavBar,
-    HeroText,
-    AboutImages,
+  AboutData,
+  CarouselData,
+  NumbersData,
+  ServiceData,
+  NavBar,
+  HeroText,
+  AboutImages,
 };

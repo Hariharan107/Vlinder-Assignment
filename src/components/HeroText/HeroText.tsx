@@ -9,7 +9,7 @@ const TextContainer = ({ mainText, subText, description }: HeroTextProps) => {
     <>
       <StyledHeroText>
         <div>
-          <span className='digital'>{mainText}</span>
+          <span className='digital'>{mainText} </span>
           <span className='design'>{subText}</span>
         </div>
       </StyledHeroText>

@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
-import { AboutTextContainer } from "../Styled/About/TextContainer";
-import AboutCards from "./AboutCards";
+import { AboutTextContainer } from "./style";
+import AboutCards from "../AboutCards/AboutCards";
 interface AboutDataProps {
   id: number;
   icon: string;

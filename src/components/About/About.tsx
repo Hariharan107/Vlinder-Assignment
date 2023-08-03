@@ -1,8 +1,8 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import AboutImages from "./AboutImages";
-import AboutText from "./AboutText";
+import AboutImages from "./AboutImages/AboutImages";
+import AboutText from "./AboutText/AboutText";
 
 interface AboutDataProps {
   id: number;

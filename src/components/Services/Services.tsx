@@ -1,6 +1,6 @@
-import HeadText from "../Services/HeadText";
-import ServiceCards from "../Services/ServiceCards";
-import Numbers from "../UI/Numbers";
+import HeadText from "./HeadText/HeadText";
+import ServiceCards from "./ServiceCards/ServiceCards";
+import Numbers from "./Numbers/Numbers";
 interface ServiceCardProps {
   id: number;
   title: string;
@@ -12,6 +12,7 @@ interface NumberProps {
   number: string;
   description: string;
 }
+
 interface ServicesProps {
   NumbersData: NumberProps[];
   ServicesData: ServiceCardProps[];

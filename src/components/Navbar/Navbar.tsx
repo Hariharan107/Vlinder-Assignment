@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import styles from "../Home.module.css";
+import styles from "../Home/Home.module.css";
 import SearchBar from "../UI/SearchBar";
 import { useMediaQuery } from "react-responsive";
 import MobileMenuIcon from "../UI/MobileMenuIcon";

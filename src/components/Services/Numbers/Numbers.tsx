@@ -3,9 +3,9 @@ import { Col, Row } from "react-bootstrap";
 import {
   StyledDescription,
   StyledContainer,
-  StyledDivv as StyledDiv,
+  StyledDiv,
   StyledCountUp,
-} from "../Styled/Services/Services.js";
+} from "./style";
 import { useInView } from "react-intersection-observer";
 
 interface numberProps {

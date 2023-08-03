@@ -1,5 +1,5 @@
 import { Card } from "react-bootstrap";
-import { StyledCard, CardContainer } from "./style";
+import { StyledCard, CardContainer } from "../style";
 interface AboutDataProps {
   id: number;
   icon: string;

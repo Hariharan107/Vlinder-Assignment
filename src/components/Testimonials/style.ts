@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 
-const TestimonialImageDiv = styled.div`
+export const TestimonialImageDiv = styled.div`
   background-image: url("https://images.pexels.com/photos/4974915/pexels-photo-4974915.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
   height: 50vh;
   width: 100%;
@@ -9,13 +9,3 @@ const TestimonialImageDiv = styled.div`
   background-repeat: no-repeat;
   filter: brightness(50%);
 `;
-
-const Testimonials = () => {
-  return (
-    <div style={{ paddingTop: "5rem" }} id='testimonials-section'>
-      <TestimonialImageDiv className='text-white text-center' />
-    </div>
-  );
-};
-
-export default Testimonials;
