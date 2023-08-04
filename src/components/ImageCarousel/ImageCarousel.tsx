@@ -6,8 +6,11 @@ import "swiper/css/scrollbar";
 import { Navigation, Pagination } from "swiper/modules";
 import { StyledHeroImage } from "../HeroText/style";
 import styles from "./styles.module.css"; // Import the CSS Module
-
-const ImageCarousel = () => {
+interface ImagePathProps {
+  imagePaths: string[];
+}
+const ImageCarousel = ({ imagePaths }: ImagePathProps) => {
+  console.log();
   return (
     <>
       <Swiper
@@ -24,15 +27,11 @@ const ImageCarousel = () => {
           prevEl: `.${styles["swiper-button-prev"]}`,
         }}
       >
-        <SwiperSlide>
-          <StyledHeroImage image='./mesh-631.png'></StyledHeroImage>
-        </SwiperSlide>
-        <SwiperSlide>
-          <StyledHeroImage image='./mesh-498.png'></StyledHeroImage>
-        </SwiperSlide>
-        <SwiperSlide>
-          <StyledHeroImage image='./mesh-10.png'></StyledHeroImage>
-        </SwiperSlide>
+        {imagePaths.map((imagePath, index) => (
+          <SwiperSlide key={index}>
+            <StyledHeroImage image={imagePath}></StyledHeroImage>
+          </SwiperSlide>
+        ))}
       </Swiper>
       <div className={`${styles["swiper-button-prev"]} swiper-button-prev`} />
       <div className={`${styles["swiper-pagination"]} swiper-pagination `} />

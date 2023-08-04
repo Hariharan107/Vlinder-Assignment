@@ -19,16 +19,18 @@ import {
   AboutImages,
   NewsletterData,
   CompanyDetailsData,
+  ImagesPath,
   AboutText as AboutTextData,
 } from "../../../data/config";
 const Home = () => {
+  console.log(ImagesPath);
   return (
     <>
       <Container>
         <Nav>
           <Navbar NavBar={NavBar} />
         </Nav>
-        <ImageCarousel />
+        <ImageCarousel {...ImagesPath} />
         <TextContainer {...HeroText} />
       </Container>
       <Main>

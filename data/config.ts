@@ -8,6 +8,7 @@ import AboutImages from "./AboutImages";
 import CompanyDetailsData from "./CompanyDetailsData";
 import NewsletterData from "./NewsletterData";
 import AboutText from "./AboutText";
+import ImagesPath from "./SwiperImagesData";
 export {
   AboutData,
   CarouselData,
@@ -19,4 +20,5 @@ export {
   AboutImages,
   NewsletterData,
   AboutText,
+  ImagesPath,
 };
