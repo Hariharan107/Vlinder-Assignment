@@ -1,6 +1,7 @@
-import HeadText from "./HeadText/HeadText";
+import { StyledHeadText } from "./HeadText/style";
 import ServiceCards from "./ServiceCards/ServiceCards";
 import Numbers from "./Numbers/Numbers";
+
 interface ServiceCardProps {
   id: number;
   title: string;
@@ -19,9 +20,16 @@ interface ServicesProps {
 }
 
 const Services = ({ NumbersData, ServicesData }: ServicesProps) => {
+  const _HeadText = () => (
+    <div className='text-center' id='service-section'>
+      <span className='text-warning'>BEST FEATURES</span>
+      <StyledHeadText className='text'>Services</StyledHeadText>
+    </div>
+  );
+
   return (
-    <div className='pt-0 pt-lg-5 '>
-      <HeadText />
+    <div className='pt-0 pt-lg-5'>
+      {_HeadText()}
       <ServiceCards ServicesData={ServicesData} />
       <Numbers NumbersData={NumbersData} />
     </div>

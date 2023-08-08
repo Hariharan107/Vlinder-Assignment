@@ -1,4 +1,3 @@
-import { numbersData } from "../../data/numbersData";
 import { Col, Row } from "react-bootstrap";
 import {
   StyledDescription,
@@ -46,7 +45,7 @@ const Numbers = ({ NumbersData }: { NumbersData: numberProps[] }) => {
 
   return (
     <StyledContainer id='gallery-section'>
-      {<Row>{Numbers}</Row>}
+      <Row>{Numbers}</Row>
     </StyledContainer>
   );
 };

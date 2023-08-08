@@ -3,8 +3,10 @@ interface HeroTextProps {
   mainText: string;
   subText: string;
   description: string;
+  contact: string;
 }
-const TextContainer = ({ mainText, subText, description }: HeroTextProps) => {
+
+const TextContainer = ({ mainText, subText, description,contact }: HeroTextProps) => {
   return (
     <>
       <StyledHeroText>
@@ -15,10 +17,12 @@ const TextContainer = ({ mainText, subText, description }: HeroTextProps) => {
       </StyledHeroText>
       <HeroSubText>{description}</HeroSubText>
       <HeroButton variant='outline-light' size='lg'>
-        Contact us
+        {contact}
       </HeroButton>
     </>
   );
 };
-
+TextContainer.defaultProps = {
+  contact: "Contact us",
+};
 export default TextContainer;

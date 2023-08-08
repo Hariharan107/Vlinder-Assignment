@@ -1,7 +1,11 @@
-import { styled } from "styled-components";
+import styled from "styled-components";
 
-export const TestimonialImageDiv = styled.div`
-  background-image: url("https://images.pexels.com/photos/4974915/pexels-photo-4974915.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+interface TestimonialImageDivProps {
+  BackgroundImage: string;
+}
+
+export const TestimonialImageDiv = styled.div<TestimonialImageDivProps>`
+  background-image: ${(props) => `url(${props.BackgroundImage})`};
   height: 50vh;
   width: 100%;
   background-size: cover;

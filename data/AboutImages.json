@@ -3,15 +3,6 @@
     "imgSrc": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFjYm9va3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60",
     "imgAlt": "MacBook-1",
     "custom_styles": "image_one"
-  },
-  {
-    "imgSrc": "https://images.unsplash.com/photo-1501163268664-3fdf329d019f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG1hY2Jvb2t8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60",
-    "imgAlt": "MacBook-2",
-    "custom_styles": "image_two"
-  },
-  {
-    "imgSrc": "https://images.unsplash.com/photo-1514826786317-59744fe2a548?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG1hY2Jvb2slMjBwcm98ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60",
-    "imgAlt": "MacBook-3",
-    "custom_styles": "image_three"
   }
+  
 ]

@@ -14,23 +14,21 @@ import {
   CarouselData,
   NumbersData,
   ServiceData,
-  NavBar,
+  NavBar as NavBarData,
   HeroText,
   AboutImages,
   NewsletterData,
   CompanyDetailsData,
   ImagesPath,
   AboutText as AboutTextData,
+  TestimonialImage,
 } from "../../../data/config";
 const Home = () => {
-  console.log(ImagesPath);
   return (
     <>
       <Container>
-        <Nav>
-          <Navbar NavBar={NavBar} />
-        </Nav>
-        <ImageCarousel {...ImagesPath} />
+        <Nav>{NavBarData && <Navbar NavBar={NavBarData} />}</Nav>
+        {ImagesPath && <ImageCarousel {...ImagesPath} />}
         <TextContainer {...HeroText} />
       </Container>
       <Main>
@@ -41,7 +39,7 @@ const Home = () => {
         />
         <Services NumbersData={NumbersData} ServicesData={ServiceData} />
         <Gallery CarouselData={CarouselData} />
-        <Testimonials />
+        <Testimonials {...TestimonialImage} />
         <Footer {...CompanyDetailsData} {...NewsletterData} />
       </Main>
     </>

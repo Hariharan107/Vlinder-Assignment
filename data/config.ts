@@ -1,14 +1,15 @@
-import AboutData from "./AboutData";
-import CarouselData from "./CarouselData";
-import NumbersData from "./NumbersData";
-import ServiceData from "./ServiceData";
-import NavBar from "./NavBar";
-import HeroText from "./HeroText";
-import AboutImages from "./AboutImages";
-import CompanyDetailsData from "./CompanyDetailsData";
-import NewsletterData from "./NewsletterData";
-import AboutText from "./AboutText";
-import ImagesPath from "./SwiperImagesData";
+import AboutData from "./AboutData.json";
+import CarouselData from "./CarouselData.json";
+import NumbersData from "./NumbersData.json";
+import ServiceData from "./ServiceData.json";
+import NavBar from "./NavBar.json";
+import HeroText from "./HeroText.json";
+import AboutImages from "./AboutImages.json";
+import CompanyDetailsData from "./CompanyDetailsData.json";
+import NewsletterData from "./NewsletterData.json";
+import AboutText from "./AboutText.json";
+import ImagesPath from "./SwiperImagesData.json";
+import TestimonialImage from "./TestimonialImage.json";
 export {
   AboutData,
   CarouselData,
@@ -21,4 +22,5 @@ export {
   NewsletterData,
   AboutText,
   ImagesPath,
+  TestimonialImage,
 };

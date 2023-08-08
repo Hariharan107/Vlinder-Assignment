@@ -10,14 +10,13 @@ interface AboutDataProps {
 interface AboutTextProps {
   sectionName: "string";
   subText: "string";
-  desciprtion: "string";
+  description: "string";
 }
 interface AboutProps {
   AboutData: AboutDataProps[];
   AboutTextData: AboutTextProps;
 }
 const AboutText = ({ AboutData, AboutTextData }: AboutProps) => {
-  console.log(AboutTextData);
   const { sectionName, subText, description } = AboutTextData;
   const StyledP = styled.p`
     font-size: calc(0.9rem + 0.3vw);
